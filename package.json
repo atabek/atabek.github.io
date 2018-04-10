@@ -2,6 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://atabek.github.io",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.1",
@@ -12,6 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master build",
     "eject": "react-scripts eject"
   }
 }
